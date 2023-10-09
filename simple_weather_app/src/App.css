@@ -30,24 +30,72 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Search {
+  font-size: 2em;
+  padding: 0.5em;
+  border-radius: 1em;
+  font-family: sans-serif;
+}
+
+.search {
+  background-color: #fff;
+  border: 1px solid #282634;
+  width: 300px;
+}
+
+.submit {
+  overflow: hidden;
+  background-color: #282634;
+  color: #fff;
+  border: 1px solid #282634;
+  border-left: none
+}
+
+.NoWeather {
+  padding-top: 25px;
+}
+
+.Weather {
+  margin-top: 10px;
+  padding: 1em;
+  text-align: center;
+  align-items: center;
+}
+
+.Weather-container {
+  border-radius: 25px;
+  /* border: 2px solid #282634 ; */
+  padding: 20px;
+}
+
+.Weather-title {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .search {
+    width: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .Weather-container {
+    margin: 0, 25%;
   }
-  
 }
 
 main {
   flex-grow: 1;
   text-align: center;
   padding: 25px;
+  margin-top: 10%;
 }
 header {
   padding: 25px;
 }
+
+input {
+  padding: 10px;
+}
+
 footer {
   padding: 2px;
   min-height: 50px;
